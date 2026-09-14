@@ -6,6 +6,23 @@ source of truth is an **append-only log of events**, and current balances are al
 deposits, withdrawals, atomic transfers, a fast read model, **time-travel** (rebuild any
 account's state at any past point), **optimistic concurrency**, and **snapshots**.
 
+# Event-Sourced Ledger
+
+Spring Boot | Java 21 | Event Sourcing | JUnit
+
+A Spring Boot REST API demonstrating:
+
+• Event sourcing
+• Immutable event log
+• Event replay
+• Time travel
+• Projections
+• Snapshots
+• Optimistic concurrency
+• Atomic transfers
+• Exception handling
+• Automated tests
+
 ```
 Command → validate business rules → append immutable event(s)
                                           │
