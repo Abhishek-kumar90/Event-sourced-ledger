@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+    include-message: never
+
+spring:
+  application:
+    name: event-sourced-ledger
+
+ledger:
+  snapshot:
+    # Take a snapshot every N events per account (0 disables snapshots).
+    # Small default so you can see snapshots kick in during a quick demo.
+    every: 20
+
+logging:
+  level:
+    com.example.ledger: INFO
