@@ -6,10 +6,6 @@ source of truth is an **append-only log of events**, and current balances are al
 deposits, withdrawals, atomic transfers, a fast read model, **time-travel** (rebuild any
 account's state at any past point), **optimistic concurrency**, and **snapshots**.
 
-**No database, no message broker, no Docker.** Everything runs in memory, so you start it
-with one command and nothing else installed. Each store sits behind an interface, so a
-real backend (PostgreSQL, Kafka) can be swapped in later without touching the domain.
-
 ```
 Command → validate business rules → append immutable event(s)
                                           │
